@@ -1,0 +1,39 @@
+version: 2
+
+models:
+  - name: dim_date
+    columns:
+      - name: date_jour
+        tests:
+          - unique
+          - not_null
+
+  - name: dim_instrument
+    columns:
+      - name: instrument
+        tests:
+          - unique
+          - not_null
+      - name: categorie
+        tests:
+          - accepted_values:
+              values: ['matiere_premiere', 'action', 'indice']
+
+  - name: dim_devise
+    columns:
+      - name: code_devise
+        tests:
+          - unique
+          - not_null
+
+  - name: fact_cotation
+    columns:
+      - name: date_cotation
+        tests:
+          - not_null
+      - name: instrument
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_instrument')
+              field: instrument

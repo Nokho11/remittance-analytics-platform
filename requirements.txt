@@ -1,0 +1,5 @@
+google-cloud-bigquery==3.27.0
+pandas==2.2.3
+requests==2.32.3
+yfinance==0.2.51
+dbt-bigquery==1.12.0

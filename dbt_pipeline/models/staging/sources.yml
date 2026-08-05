@@ -1,0 +1,52 @@
+version: 2
+
+sources:
+  - name: raw
+    dataset: raw
+    tables:
+      - name: frankfurter_rates_du_jour
+      - name: frankfurter_dim_devise
+      - name: yfinance_or
+      - name: yfinance_argent
+      - name: yfinance_platine
+      - name: yfinance_palladium
+      - name: yfinance_cuivre
+      - name: yfinance_minerai_fer
+      - name: yfinance_aluminium
+      - name: yfinance_cacao
+      - name: yfinance_cafe
+      - name: yfinance_sucre
+      - name: yfinance_coton
+      - name: yfinance_jus_orange
+      - name: yfinance_ble
+      - name: yfinance_mais
+      - name: yfinance_soja
+      - name: yfinance_riz
+      - name: yfinance_avoine
+      - name: yfinance_brent
+      - name: yfinance_wti
+      - name: yfinance_gaz_naturel
+      - name: yfinance_essence
+      - name: yfinance_fioul
+      - name: yfinance_bovins
+      - name: yfinance_kosmos
+      - name: yfinance_bp
+      - name: yfinance_woodside
+      - name: yfinance_totalenergies
+      - name: yfinance_shell
+      - name: yfinance_exxon
+      - name: yfinance_kinross
+      - name: yfinance_endeavour
+      - name: yfinance_barrick
+      - name: yfinance_newmont
+      - name: yfinance_glencore
+      - name: yfinance_anglo_american
+      - name: yfinance_orange_sa
+      - name: yfinance_sp500
+      - name: yfinance_cac40
+      - name: yfinance_ftse100
+      - name: yfinance_nikkei
+      - name: yfinance_vix
+      - name: worldbank_poids_export_agricole
+      - name: worldbank_poids_export_energie
+      - name: worldbank_poids_export_metaux

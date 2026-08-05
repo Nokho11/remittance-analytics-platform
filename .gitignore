@@ -1,0 +1,28 @@
+# Secrets
+*.json
+!package.json
+.env
+
+# Donnees extraites (regenerees par le pipeline)
+scripts/raw/
+
+# Python
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+
+# Airflow
+airflow_home/
+*.db
+*.log
+logs/
+
+# dbt
+target/
+dbt_packages/
+logs/
+.user.yml
+
+# Systeme
+.DS_Store
